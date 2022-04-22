@@ -1,0 +1,164 @@
+$font-stack: 'Montserrat', sans-serif;
+$primary-color: #932020;
+$secondary-color: #bb1313;
+$third-color: #fbc111;
+$gray-color: #BFC4CA;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+//GENERAL
+html,
+body {
+  font-family: $font-stack;
+  line-height: 21px;
+  scroll-behavior: smooth;
+}
+
+h1 { font-size: 48px; }
+h2 { font-size: 45px; }
+h4 { font-size: 24px; }
+
+p {
+  font-size: 16px;
+  margin: 10px 0;
+  line-height: 21px;
+}
+
+a { text-decoration: none; }
+//CONTENEDOR PRINICIPAL
+.contenedor {
+  margin: auto;
+  max-width: 1300px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.large { font-size: 20px; }
+
+.display1 { 
+  font-size: 56px; 
+}
+
+.boton {
+  display: inline-block;
+  font-size: 15px;
+  padding: 12px 40px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 30px;
+}
+
+.botonClaro {
+  background: $gray-color;
+  border: none;
+  color: #ffffff;
+}
+
+.botonOscuro {
+  background: $primary-color;
+  border: 1px solid $primary-color;
+  color: #ffffff;
+}
+
+form {
+  label,h4 {
+  display: block;
+  margin-bottom: 6px;
+  color: #4D4D4D;
+  }
+  .grupoFormulario {
+    margin-bottom: 16px;
+  }
+  .controlFormulario {
+    width: 100%;
+    padding: 7px 12px;
+    font-size: 16px;
+    line-height: 25px;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #4D4D4D;;
+    border-radius: 20px;
+  } 
+} 
+
+
+#cabecera {
+  background: $primary-color;
+  color: #fff;
+  height: 100vh;
+  h1 {
+    font-weight: 700;
+    padding-bottom: 20px;
+    line-height: 70px;
+  }
+  .cabeceraRow {
+    display: flex;
+    padding-top: 100px;
+    &Texto {
+      width: 60%;
+      padding-right: 40px;
+      padding-top: 80px;
+      a {
+        margin-top: 30px;
+      }
+    } 
+    &Formulario {
+      width: 40%;
+      margin-left: 90px;
+      .logoFormulario {
+        background-image: linear-gradient(to right, $secondary-color, $third-color);
+        padding: 70px ;
+        border-radius: 50px;
+        img {
+          height: 80px;
+          display: block;
+          margin: 0 auto;
+        }
+      } 
+      form {
+        background: #FFF;
+        padding: 50px 50px 70px 50px;
+        border-radius: 50px;
+        .boton {
+          width: 100%;
+        }
+      }
+    } 
+  } 
+} 
+
+// LEER MAS
+#mas {
+  padding: 60px 0;
+  h2 {
+    line-height: 50px;
+    font-weight: 10px;
+    padding-bottom: 20px;
+  }
+  .masRow {
+    display: flex;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    &Contenido {
+      padding-right: 40px;
+    }
+  } 
+}
+// FOOTER
+#footer {
+  background: $primary-color;
+  text-align: center;
+  padding:30px;
+  color: $gray-color;
+  a{
+    text-decoration: none;
+    color: $gray-color
+    }
+}
+
+@import '_mobile';

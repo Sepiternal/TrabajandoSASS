@@ -1,0 +1,25 @@
+@media(max-width: 700px){
+
+    .display1 { 
+      font-size: 3rem; 
+    }
+  #cabecera {
+    height: 100%;
+    .cabeceraRow {
+      flex-wrap: wrap;
+      padding-top: 20px;
+      &Texto {
+        width: 100%;
+        padding-right: 0;
+        padding-top: 20px;
+      } 
+      &formulario {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 50px;
+        padding-top: 50px;
+      } 
+    } 
+  } 
+  
+}
