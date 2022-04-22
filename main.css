@@ -128,16 +128,8 @@ form .controlFormulario {
 }
 
 #cabecera .cabeceraRowFormulario .logoFormulario {
-  background-image: -webkit-gradient(linear, left top, right top, from(#bb1313), to(#fbc111));
-  background-image: linear-gradient(to right, #bb1313, #fbc111);
-  padding: 70px;
+  padding: 10px;
   border-radius: 50px;
-}
-
-#cabecera .cabeceraRowFormulario .logoFormulario img {
-  height: 80px;
-  display: block;
-  margin: 0 auto;
 }
 
 #cabecera .cabeceraRowFormulario form {

@@ -1,7 +1,5 @@
 $font-stack: 'Montserrat', sans-serif;
 $primary-color: #932020;
-$secondary-color: #bb1313;
-$third-color: #fbc111;
 $gray-color: #BFC4CA;
 
 * {
@@ -110,15 +108,9 @@ form {
     &Formulario {
       width: 40%;
       margin-left: 90px;
-      .logoFormulario {
-        background-image: linear-gradient(to right, $secondary-color, $third-color);
-        padding: 70px ;
+      .logoFormulario {;
+        padding: 10px ;
         border-radius: 50px;
-        img {
-          height: 80px;
-          display: block;
-          margin: 0 auto;
-        }
       } 
       form {
         background: #FFF;
